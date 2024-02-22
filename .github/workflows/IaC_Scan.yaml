@@ -22,9 +22,9 @@ jobs:
           quiet: 'true'                  
           output_file_path: ./results.json
           soft_fail: 'true'              
-          token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzExMTA3NzE3LCJqdGkiOiIxZDNlZTkxOTFiYzY0NGUzOWZmYThhNWNkMDVjNDg3NyIsImlzcyI6ImNzcG0uZGV2LmFjY3Vrbm94LmNvbSJ9.MvxzqTo5lNvg6kdPnIeD2npxtSyd0pZhhwuaxg9XE6o71gy0kIzAiCoYHRXcZamn0YONuDRcqdwHqy4AuFtTOMUlShpq6e9VgbMvRb3meZagw2pHUO7N9AXpD34OZQcX8gtbhBYBttBoAo6ZpTZwgSfc9G7XKa5S8ArMFL2EdzQYGexDeVx4YZDPeGAycAvQTNmeweoraUjBbN9E04nm0t0nyqBmgpoju2hE70hQEYhoWuC0i7LECcvQVm-5qrB30hjySsTk_9hTpnY5YVOd_ncz7FFt_wCv7T9pp2nnOFfq8YviXYSTg1PxO1fFJ3a13bXLDTtD9Zsa70iTzFeBBw"
-          endpoint: "cspm.dev.accuknox.com"
-          tenant_id: "1069"
+          token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwOTQ1NzIwLCJqdGkiOiIxODdjNTA2NmZlYjY0YmNiOWM4MTgzNDZhODRiMzg0NSIsImlzcyI6ImNzcG0uZGVtby5hY2N1a25veC5jb20ifQ.DkgKXqHg1iBsqqxUWEgvYwk8qcwWeRouEJzARu9gCEBfWcLWtnthhLk_enJDaK9R82vTRfgejnIIaIQp--u8qV0MWfCx6DCaZbvxemwcXuHMkgpmZUo7ZfR0aiWX3eB_ZIy7kqsNRkbcVyIBJcTYXAxgp7HNMTDIYXhJSQ6E61jxnmUXlh7_4-_CaLhvoCZRRl_Ij9h39nwLn5IzRcwTtAcyW7F_CqnAsm6vX8jWkuAGqM0kdw2P06AkD8N6Dxys1lwDBGHt2P9JzruQHiXUA23IRRHfNOiXSiW_WYvm2MyFMF26z3mnzDmkCxIjdEUseYv2Nzd3-a27fDt7ytfsig"
+          endpoint: "cspm.demo.accuknox.com"
+          tenant_id: "167"
 
 
 
