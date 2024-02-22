@@ -4,7 +4,7 @@
 ## checkov --directory /user/path/to/iac/code
 ## checkov --file /user/tf/example.tf
 ## checkov -f /user/cloudformation/example1.yml -f /user/cloudformation/example2.yml
-
+#dhfdkf
 locals {
   sg_name    = "checkov-test"
   aws_vpc_id = "vpc-#####" #enter vpc id here
