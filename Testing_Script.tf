@@ -1,4 +1,4 @@
-
+#check
 ## This is a sample Terraform file to check CHECKOV
 ## Run checkov 
 ## checkov --directory /user/path/to/iac/code
