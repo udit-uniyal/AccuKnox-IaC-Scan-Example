@@ -20,7 +20,7 @@ jobs:
         with:
           directory: ./  
           quiet: 'true'                  
-          output_file_path: ./results.json
+          output_file_path: ./results
           soft_fail: 'true'              
           token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzExMjAxNTA0LCJqdGkiOiI4OWIzNzNlMTA1ZmI0N2U0OWNiN2MyMjhkYzJkMGFjZiIsImlzcyI6ImNzcG0uZGV2LmFjY3Vrbm94LmNvbSJ9.ixbjFO6AIaN44Hi64fXdWnIuF187XLjrpIhDMfTwAPEjzSNMsLkPHMXvhT5cdlargwdbXSE-TeE39BplIIWcDP41FjtEYdf51Dhn8BBIG8suZmgJAQjV8qUpIVQqePSOgisDOEPT2UfuN4BPujg8VSbmv8dYuAMcenfefA_B1LRmtkg5bm0fdWiiHLlPgCRRM6HUNSsNtCPR3ZKs1A9K7_TnfdPQw-2d3Vk5HwPeeDszHUOa1md5aprauU9dM4LeDIZmZaHQ0VAIr-qytTXrmKXEm3n8UbsZFza4HaRH4auyxidGARekxy-rvCwqDdoYEyB_1zshZVLbfwv2VLQ94A"
           endpoint: "cspm.dev.accuknox.com"
