@@ -82,13 +82,6 @@ runs:
         run: | 
           sudo jq --arg repoLink "${{ github.server_url }}/${{ github.repository }}" --arg branch "${{ github.head_ref }}" '. += [{"details": {"repo": $repoLink, "branch": $branch}}]' /results.json | sudo tee /results.json > /dev/null
         shell: bash
-
-      - name: results
-        run: |
-         ls /
-         cd /results.json
-         cat ./results.json
-        shell: bash
         
       - name: Push report to CSPM panel
         run: |
