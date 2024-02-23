@@ -84,7 +84,10 @@ runs:
         shell: bash
 
       - name: results
-        run: cat ./results.json
+        run: |
+         ls /
+         cd /results.json
+         cat ./results.json
         shell: bash
         
       - name: Push report to CSPM panel
