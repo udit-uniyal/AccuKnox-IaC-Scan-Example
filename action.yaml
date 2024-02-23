@@ -80,7 +80,7 @@ runs:
 
       - name: ldhfkdsfjb
         run: |
-          ls /results
+          ls
         shell: bash
         
       - name: Formating the results  
