@@ -81,6 +81,9 @@ runs:
       - name: ldhfkdsfjb
         run: |
           ls
+          pwd
+          cd results
+          ls 
         shell: bash
         
       - name: Formating the results  
