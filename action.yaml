@@ -81,7 +81,6 @@ runs:
       - name: ldhfkdsfjb
         run: |
           ls /results
-          cat /results/*
         shell: bash
         
       - name: Formating the results  
