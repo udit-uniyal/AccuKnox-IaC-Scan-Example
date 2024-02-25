@@ -30,11 +30,8 @@ inputs:
   skip_framework:
     description: 'skip a specific infrastructure'
     required: false
-  github_pat:
-    description: 'Environment variable name for a Github personal access token for scanning external modules sourced from private repositories'
-    required: false
-  enable_secrets_scan_all_files:
-    description: 'Scan all files for secrets'
+  baseline:
+    description: 'Path to a .accuknox.baseline file to compare. Report will include only failed checks that are not in the baseline'
     required: false
   token:
     description: 'The token for authenticating with the CSPM panel.'
