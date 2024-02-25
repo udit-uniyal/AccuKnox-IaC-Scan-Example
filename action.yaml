@@ -68,6 +68,7 @@ runs:
             ${INPUT_OUTPUT_FILE_PATH}
             ${INPUT_SOFT_FAIL}
             ${INPUT_FRAMEWORK}
+            ${INPUT_BASELINE}
         env:
           INPUT_FILE: ${{ inputs.file }}
           INPUT_DIRECTORY: ${{ inputs.directory }}
@@ -77,6 +78,7 @@ runs:
           INPUT_OUTPUT_FILE_PATH: ${{ inputs.output_file_path }}
           INPUT_SOFT_FAIL: ${{ inputs.soft_fail }}
           INPUT_FRAMEWORK: ${{ inputs.framework }}
+          INPUT_BASELINE: ${{ inputs.baseline }}
 
         
       - name: Formating the results  
