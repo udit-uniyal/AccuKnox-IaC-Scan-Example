@@ -1,0 +1,27 @@
+{
+    "failed_checks": [
+        {
+            "file": "/terra.tf",
+            "findings": [
+                {
+                    "resource": "aws_instance.example",
+                    "check_ids": [
+                        "CKV2_AWS_41",
+                        "CKV_AWS_126",
+                        "CKV_AWS_135",
+                        "CKV_AWS_79",
+                        "CKV_AWS_8"
+                    ]
+                },
+                {
+                    "resource": "aws_security_group.example",
+                    "check_ids": [
+                        "CKV2_AWS_5",
+                        "CKV_AWS_23",
+                        "CKV_AWS_24"
+                    ]
+                }
+            ]
+        }
+    ]
+}
