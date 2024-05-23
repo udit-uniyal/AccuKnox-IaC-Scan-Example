@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@main
       
       - name: Run IaC scan
-        uses: ./
+        uses: accuknox/iac-scan-action@v0.0.1
         with:
           directory: ./  
           quiet: 'true'                  
