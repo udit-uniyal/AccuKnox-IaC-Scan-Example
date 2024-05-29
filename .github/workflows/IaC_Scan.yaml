@@ -7,6 +7,9 @@ on:
   pull_request:
     branches:
       - main
+permissions:
+  contents: read
+  security-events: write
 
 jobs:
   tests:
@@ -19,18 +22,9 @@ jobs:
         uses: accuknox/iac-scan-action@v0.0.1
         with:
           directory: ./  
-          quiet: 'true'                  
           output_file_path: ./results
-          soft_fail: 'true'     
           token: ${{ secrets.TOKEN }}
           endpoint: "cspm.demo.accuknox.com"
           tenant_id: ${{ secrets.TENANT_ID}}
-
-
-
-     
-
-      
-        
-        
-  # framework: ansible, argo_workflows, arm, azure_pipelines, bicep, bitbucket_pipelines, cdk, circleci_pipelines, cloudformation, dockerfile, github_configuration, github_actions, gitlab_configuration, gitlab_ci, bitbucket_configuration, helm, json, yaml, kubernetes, kustomize, openapi, sca_package, sca_image, secrets, serverless, terraform, terraform_json, terraform_plan, sast, sast_python, sast_java, sast_javascript, 3d_policy.
+          quiet: "true"
+          soft_fail: "true"
