@@ -1,0 +1,33 @@
+steps:
+# Step 1: Clone the GitHub repository
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/th3-v3ng34nc3/AccuKnox-IaC-Scan-GCP.git', '/workspace/AccuKnox_Iac']
+
+# Step 2: Install Checkov
+- name: 'python:3.8'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      pip install checkov
+
+# Step 3: Run Checkov scan and save report in JSON format
+- name: 'python:3.8'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      checkov -d /workspace/AccuKnox_Iac --output json > checkov_report.json || true
+
+# Step 4: Store the Checkov report as an artifact
+artifacts:
+  objects:
+    location: 'gs://aditya-cicd-test/checkov-reports/'
+    paths: 
+      - 'checkov_report.json'
+
+# Substituting your-bucket-name with the name of your Google Cloud Storage bucket
+substitutions:
+  _BUCKET_NAME: 'gs://aditya-cicd-test'
+
+timeout: '1200s' # 20 minutes
