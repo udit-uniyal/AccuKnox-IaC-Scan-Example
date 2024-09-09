@@ -21,7 +21,7 @@ jobs:
       - name: Run IaC scan
         uses: accuknox/iac-scan-action@v0.0.1
         with:
-          directory: ./  
+          # directory: ./  
           output_file_path: ./results
           token: ${{ secrets.TOKEN }}
           endpoint: "cspm.demo.accuknox.com"
