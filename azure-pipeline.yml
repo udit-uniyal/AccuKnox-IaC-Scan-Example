@@ -1,0 +1,17 @@
+trigger: 
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
+- task: accuknox-iac@1.0.1
+  inputs:
+    accuknoxEndpoint: 'cspm.demo.accuknox.com'
+    accuknoxTenantId: '167'
+    accuknoxToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDA0MDkwLCJqdGkiOiI0YjkwYzAwNzNjOWE0MzE3ODRiZTIzMTE0MTViMTQ2NCIsImlzcyI6ImNzcG0uZGVtby5hY2N1a25veC5jb20ifQ.DnlsMl62RFZ4IE0DkO2r7CK6BAP9OIjix0sQBgQoxWU1TfzgCb4zdEAX8jZiikvtk7wd6kFZaab3qFAVG6ri9dptZ_QrvTcavBzX6Hwp201IQ3STv_5mdby2g3qGoQ9mrbJtI7wHWS1PHyLr0XDS_6oBlIcAOG2NI-6pVyUl7VbGb36EWrDQ54hhF37KgugU5uyhO3fcnfKKTDSNX98ExqQQ3WZZPXWyODRtxhyVUkKDwDtbrnOLHw1x9fnqTZFiYBr0MKkIxfpV4HS0k6QPvnA60MuEduhJlRdC50NgGEOzaX4-IOcZuhfVYq1rUfmHrwfT5RgD5ZDpvJOqsoj2Nw'
+    accuknoxLabel: 'iac'
+    inputQuiet: true
+    inputCompact: true
+    inputSoftFail: true
